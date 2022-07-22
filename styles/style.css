@@ -25,6 +25,7 @@ main {
 
 hr {
     border: 1px solid #D1D1D1;
+    margin-bottom: 21px;
 }
 
 /* common style end  */
@@ -58,3 +59,31 @@ hr {
 }
 
 /* Top players style end */
+/* top blogs stayle start  */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+.blog {
+    display: flex;
+}
+
+.thambnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-title {
+    font-size: 20px;
+}
+
+.blog-details {
+    margin-left: 16px;
+}
+
+.blog-details a {
+    text-decoration: none;
+    color: #562EFF;
+}
