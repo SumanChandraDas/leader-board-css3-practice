@@ -49,6 +49,7 @@ hr {
 .player {
     display: flex;
     align-items: center;
+
 }
 
 .player img {
@@ -128,4 +129,49 @@ hr {
 
 .fa-clock {
     color: #FF4A60;
+}
+
+/* -------------media quaray
+--------------------------*/
+
+/* mobile devices */
+@media only screen and (max-width : 688px) {
+    .section-heading {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+}
+
+/* tablate devices  */
+@media only screen and (min-width:688px)and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .player {
+        justify-content: center;
+        flex-direction: column;
+    }
 }
